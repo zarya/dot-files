@@ -1,0 +1,29 @@
+#
+# $Id: .screenrc 8 2006-07-21 10:30:08Z wijnand $
+#
+# status
+hardstatus alwayslastline "%{Yk} %Y-%02m-%02d %0c:%s %{k}|%{C} %LD %{k}|%{G} %l %{k}|%{W} %-Lw%{+u}%n %t%{-u}%+Lw"
+
+# key bindings
+bind '=' resize +1
+bind '-' resize -1
+bind 'w' windowlist -b
+
+# give my old screen back
+altscreen on
+
+# more buffer
+defscrollback 2048
+
+# stfu :)
+startup_message off
+
+# auto detach
+autodetach on
+
+# emulate .logout message
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+# default utf-8
+defutf8 on
+
